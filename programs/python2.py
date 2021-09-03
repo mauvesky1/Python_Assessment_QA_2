@@ -32,26 +32,29 @@ import random
 
 
 def one(string):
+    result = []
+    for char in string:
+        pass
     return
 
     # <QUESTION 2>
-
     #  Write a function which returns the boolean True if the input is only divisible by one and itself.
-
     # The function should return the boolean False if not.
-
     # <EXAMPLES>
-
     # two(3) → True
     # two(8) → False
-
     # <HINT>
     # What operator will give you the remainder?
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 
 def two(num):
-    return
+    result = True
+    for i in range(num):
+      if i != 0 and i != 1:
+        if num % i == 0:
+            result = False
+    return result
 
     # <QUESTION 3>
 
