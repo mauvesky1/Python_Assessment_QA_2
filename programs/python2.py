@@ -2,16 +2,6 @@ import random
 
 # INSTRUCTIONS
 
-# In case it is not clear, the Question appears first, then examples, then any hints and finally the function that you need to complete appears underneath:
-
-# <QUESTION>
-
-# <EXAMPLES>
-
-# <HINT>
-
-# You are NOT allowed access to the internet for this assessment, instead you should use the DOCUMENTATION that comes bundled with your Python installation.  You should already be comfortable accessing this documentation, but to summarise:
-
 # Access Python from you CLI
 
 # Type help() or for example help(str)
@@ -34,8 +24,12 @@ import random
 def one(string):
     result = []
     for char in string:
-        pass
-    return
+      
+        result.append(char)
+        result.append(char)
+
+        result.append(char)
+    return "".join(result)
 
     # <QUESTION 2>
     #  Write a function which returns the boolean True if the input is only divisible by one and itself.
@@ -72,7 +66,21 @@ def two(num):
 
 
 def three(a):
-    return
+    m_list = []
+    #for  in range(4):
+        
+    #    if i > 0:
+    mini_string = ""
+    for i in range(4):
+                # mini_string = ""
+        mini_string += str(a)
+
+        m_list.append(mini_string)
+    
+    result = 0
+    for number in m_list:
+        result += int(number)
+    return result
 
     # <QUESTION 4>
 
