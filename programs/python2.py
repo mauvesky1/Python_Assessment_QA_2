@@ -227,7 +227,21 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
-    return
+    shortest_string = ""
+    longer_string = ""
+    result = True
+    if len(string1) <= len(string2):
+        shortest_string = string1
+        longer_string = string2
+    else:
+        shortest_string = string2
+        longer_string = string1
+
+    for char in shortest_string:
+        if char not in longer_string:
+            result = False
+
+    return result
 
     # <QUESTION 10>
 
