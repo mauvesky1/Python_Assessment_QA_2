@@ -110,7 +110,17 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    string1_list = list(string1)
+    string2_list = list(string2)
+    result = []
+
+    for i in range(len(string1_list)):
+        result.append(string1_list[i])
+        result.append(string2_list[i])
+
+    #result = zip(string1_list, string2_list)
+
+    return "".join(result)
 
     # <QUESTION 5>
 
