@@ -138,7 +138,11 @@ def four(string1, string2):
 
 
 def five():
-    return
+    result = []
+    while len(result) < 5:
+        result.append(random.randrange(100, 200, 2))
+
+    return result
 
     # <QUESTION 6>
 
