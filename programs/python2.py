@@ -147,22 +147,19 @@ def five():
     # <QUESTION 6>
 
     # Given a string, return the boolean True if it ends in "py", and False if not.
-
     # Ignore Case.
-
     # For Example:
-
     # six("ilovepy") → True
     # six("welovepy") → True
     # six("welovepyforreal") → False
     # six("pyiscool") → False
 
-    # <HINT>
-    # There are no hints for this question.
-
-
 def six(string):
-    return
+    n_string = string.lower()
+
+    if n_string[-2:] == "py":
+        return True
+    return False
 
     # <QUESTION 7>
 
