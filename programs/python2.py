@@ -94,7 +94,6 @@ def three(a):
     # And so on.
 
     # Maintain case.
-
     # You will not encounter whitespace.
 
     # <EXAMPLES>
@@ -192,9 +191,7 @@ def seven(a, b, c):
     return False 
 
     # <QUESTION 8>
-
     # Given a string and an integer, n, return a string that removes n letters from the 'middle' of the string.
-
     # The string length will be at least n, and be odd when the length of the input is odd, so there will always be a 'middle'.
 
     # <EXAMPLES>
@@ -208,21 +205,22 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-    return
+    string_list = list(string)
+    for  i in range(num):
+        string_list.pop(int(len(string_list)/2))
+        
+    #starting_num = int(num / 2)
+    #result = string.replace(string[starting_num:starting_num+num], "")
+    return "".join(string_list)
 
     # <QUESTION 9>
-
     # Given two string inputs, if one can be made from the other return the boolean True, if not return the boolean False.
-
     # <EXAMPLES>
-
     # nine("god", "dog") → True
     # nine("tree", "tiredest") → True
     # nine("cat", "dog") → False
     # nine("tripping", "gin") → True
 
-    # <HINT>
-    # There are no hints for this question.
 
 
 def nine(string1, string2):
