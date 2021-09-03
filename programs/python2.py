@@ -260,4 +260,10 @@ def nine(string1, string2):
 
 
 def ten(a, b):
-    return
+    result = []
+    for i in range(b):
+        new_row = []
+        for x in range(a):
+            new_row.append(i * x)
+        result.append(new_row)
+    return result
